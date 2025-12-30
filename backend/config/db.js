@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-// mongodb+srv://kulkantsharma9883_db_user:ksharma9883@cluster0.bzybmqu.mongodb.net/
 
 const connectDB = async () => {
   try {
