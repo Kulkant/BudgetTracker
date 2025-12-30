@@ -3,7 +3,7 @@ import {
   getTransactions,
   addTransaction,
   deleteTransaction,
-} from "../controllers/transactionController.js";
+} from "../controllers/transaction.controllers.js";
 // import { protect } from "../middlewares/auth.middleware.js";
 
 const router = express.Router();
