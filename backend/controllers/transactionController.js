@@ -23,7 +23,7 @@ export const getTransactions = async (req, res, next) => {
 // @route POST api/v1/transactions
 // @access Private
 
-const addTransaction = async (req, res, next) => {
+export const addTransaction = async (req, res, next) => {
   try {
     const { text, amount, category, type } = req.body;
 
@@ -56,7 +56,7 @@ const addTransaction = async (req, res, next) => {
 //@desc   Delete transction
 //@route  DELETE api/v1/tranaction/:id
 //@access Private
-const deleteTransaction = async (req, res, next) => {
+export const deleteTransaction = async (req, res, next) => {
   try {
     const transaction = await Transaction.findById(req.params.id);
 
