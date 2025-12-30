@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import transactionRoutes from "./routes/transactions.routes.js";
 import connectDB from "./config/db.js";
+import userRoutes from "./routes/user.routes.js";
 
 dotenv.config();
 connectDB();
@@ -13,6 +14,8 @@ app.use(cors());
 app.use(express.json());
 
 app.use("api/v1/transactions", transactionRoutes);
+
+app.use("api/v1/users", userRoutes);
 
 const PORT = process.env.PORT || 5000;
 
